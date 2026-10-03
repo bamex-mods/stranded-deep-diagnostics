@@ -1,0 +1,27 @@
+# Generated build output
+/build/
+/out/
+/bin/
+/obj/
+
+# Generated release output
+/dist/out/
+
+# IDE
+.vs/
+*.user
+*.suo
+
+# Diagnostics/runtime artifacts
+Reports/
+Logs/
+*.log
+*.pdb
+
+# Temporary
+*.tmp
+*.bak
+*~
+
+# Local development bootstrap (not part of public canonical source)
+/install-to-canonical.ps1

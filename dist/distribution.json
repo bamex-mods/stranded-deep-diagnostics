@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "diagnostics",
+  "name": "Stranded Deep Diagnostics",
+  "version": "1.0.0-rc1",
+  "artifactBaseName": "StrandedDeepDiagnostics",
+  "type": "mod",
+  "category": "developer-tools",
+  "description": "Runtime diagnostics and targeted tracing toolkit for Stranded Deep BepInEx mod development.",
+  "packagePaths": [
+    "BepInEx/plugins/StrandedDeepDiagnostics"
+  ],
+  "ownedPaths": [
+    "BepInEx/plugins/StrandedDeepDiagnostics"
+  ],
+  "install": {
+    "restartRequired": true
+  },
+  "dependencies": [
+    {
+      "id": "bepinex",
+      "required": true
+    }
+  ],
+  "optionalDependencies": [],
+  "conflicts": [],
+  "persistence": {
+    "usesBepInExConfig": true,
+    "usesGameSave": false,
+    "usesSidecarData": false,
+    "backupBeforeUpdate": false
+  },
+  "publishing": {
+    "repository": "stranded-deep-diagnostics",
+    "tag": "v1.0.0-rc1",
+    "releaseChannel": "prerelease"
+  },
+  "bepInExGuid": "com.bamex.strandeddeep.diagnostics"
+}
