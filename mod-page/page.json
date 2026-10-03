@@ -1,0 +1,33 @@
+{
+    "schemaVersion":  1,
+    "id":  "diagnostics",
+    "defaultLocale":  "en",
+    "locales":  {
+                    "en":  "en.json",
+                    "ru":  "ru.json"
+                },
+    "media":  {
+                  "icon":  "media/icon.png",
+                  "screenshots":  [
+
+                                  ]
+              },
+    "tags":  [
+                 "diagnostics",
+                 "developer_tools",
+                 "tracing",
+                 "reverse_engineering",
+                 "split_screen",
+                 "ui",
+                 "interaction",
+                 "audio",
+                 "raft",
+                 "saveables"
+             ],
+    "highlights":  [
+                       "split_screen",
+                       "interaction",
+                       "audio",
+                       "raft"
+                   ]
+}

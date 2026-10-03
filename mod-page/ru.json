@@ -1,0 +1,50 @@
+{
+    "schemaVersion":  1,
+    "locale":  "ru",
+    "subtitle":  "Read-only диагностика runtime и точечный tracing для разработки модов Stranded Deep.",
+    "description":  "Диагностический набор для разработки BepInEx-модов Stranded Deep, ориентированный прежде всего на безопасное исследование runtime. Поддерживает local split-screen, инспекцию объектов и игровых систем, snapshots, diff, отчёты, capability discovery и точечный opt-in tracing без намеренного изменения геймплея или сохранений.",
+    "features":  [
+                     "Раздельное определение Player 1 и Player 2 и целей инспекции в local split-screen.",
+                     "Инспекторы объектов, физики, камер, ввода, UI, взаимодействий, saveables, storage, inventory, мира, строительства и загруженных плагинов.",
+                     "Семантический выбор цели с pin/unpin для повторного исследования одного runtime-объекта.",
+                     "Snapshots, diff и экспорт отчётов для сравнения runtime-состояния и фиксации диагностических инцидентов.",
+                     "Точечный opt-in Harmony tracing: включается только при необходимости и снимается при отключении Diagnostics или выгрузке мира.",
+                     "Отдельный модуль AUDIO для discovery, DSP telemetry и точечной диагностики аудио-инцидентов.",
+                     "Отдельный модуль RAFT для runtime discovery, sampling и анализа состояния плотов.",
+                     "Capability Manifest показывает AVAILABLE, PARTIAL или UNAVAILABLE вместо предположения, что любой диагностический путь всегда доступен.",
+                     "Опциональные BamEx adapters добавляют специализированную диагностику Boombox и Raft Furniture, но не являются зависимостями ядра.",
+                     "Inspection-first подход: инструмент не предназначен для изменения геймплея, save data, Rigidbody state, placement validity, attachment state или collision-ignore state."
+                 ],
+    "screenshotCaptions":  {
+
+                           },
+    "faq":  [
+                {
+                    "question":  "Diagnostics изменяет сохранение или геймплей?",
+                    "answer":  "Инструмент спроектирован как inspection-first. По умолчанию он читает runtime-состояние и не предназначен для изменения геймплея или save data. Точечный tracing является включаемой диагностической instrumentation, а не игровой механикой."
+                },
+                {
+                    "question":  "Он работает в local split-screen?",
+                    "answer":  "Да. Player 1 и Player 2 определяются отдельно через игровые цепочки player, player-camera и Rewired; Camera.main не используется как идентичность игрока."
+                },
+                {
+                    "question":  "Какие основные горячие клавиши?",
+                    "answer":  "F8 включает и выключает Diagnostics, Alt+F8 переключает P1/P2, F9 меняет модуль, F10 закрепляет или открепляет цель, F11 запускает специализированный targeted tracing, F12 создаёт report/incident, Shift+F12 выполняет diff/status, а Ctrl+F12 включает более глубокую безопасную инспекцию полей для OBJECT/PHYSICS."
+                },
+                {
+                    "question":  "Куда сохраняются отчёты?",
+                    "answer":  "При стандартной portable-конфигурации отчёты сохраняются в BepInEx/config/StrandedDeepDiagnostics/Reports."
+                },
+                {
+                    "question":  "BamEx adapters обязательны?",
+                    "answer":  "Нет. Ядро Diagnostics работает без них. BamEx adapters — это опциональные расширения для специализированной инспекции Boombox и Raft Furniture."
+                },
+                {
+                    "question":  "Почему версия отмечена как pre-release?",
+                    "answer":  "v1.0.0-rc1 — первый публичный release candidate. Он распространяется через общий каталог Stranded Deep и Mod Manager, но остаётся явно помеченным как pre-release."
+                }
+            ],
+    "changelog":  [
+
+                  ]
+}

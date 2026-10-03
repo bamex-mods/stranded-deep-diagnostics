@@ -1,0 +1,50 @@
+{
+    "schemaVersion":  1,
+    "locale":  "en",
+    "subtitle":  "Read-only runtime diagnostics and targeted tracing toolkit for Stranded Deep mod development.",
+    "description":  "Inspection-first diagnostics for Stranded Deep BepInEx development. It provides split-screen-aware runtime inspection, snapshots, diffs, reports, capability discovery and targeted opt-in tracing without intentionally modifying gameplay or save data.",
+    "features":  [
+                     "Split-screen-aware player and target resolution for Player 1 and Player 2.",
+                     "Inspectors for objects, physics, cameras, input, UI, interaction, saveables, storage, inventory, world state, construction and loaded plugins.",
+                     "Semantic target picking with pin/unpin support for repeated inspection of the same runtime object.",
+                     "Snapshot, diff and report export tools for comparing runtime state and preserving incident evidence.",
+                     "Targeted opt-in Harmony tracing that can be enabled only when needed and is removed when disabled or when the world unloads.",
+                     "Dedicated AUDIO diagnostics for discovery, DSP telemetry and focused incident tracing.",
+                     "Dedicated RAFT diagnostics for runtime raft discovery, sampling and incident analysis.",
+                     "Capability Manifest reports AVAILABLE, PARTIAL or UNAVAILABLE support instead of assuming every diagnostic path is present.",
+                     "Optional BamEx adapters add project-specific knowledge for Boombox and Raft Furniture without making them core dependencies.",
+                     "Inspection-first design: the tool does not intentionally modify gameplay, save data, Rigidbody state, placement validity, attachment state or collision-ignore state."
+                 ],
+    "screenshotCaptions":  {
+
+                           },
+    "faq":  [
+                {
+                    "question":  "Does Diagnostics modify my save or gameplay?",
+                    "answer":  "It is designed as an inspection-first tool. By default it reads runtime state and does not intentionally modify gameplay or save data. Targeted tracing is opt-in instrumentation rather than a gameplay feature."
+                },
+                {
+                    "question":  "Does it support local split-screen?",
+                    "answer":  "Yes. Player 1 and Player 2 are resolved separately through the game player, player-camera and Rewired chains rather than treating Camera.main as player identity."
+                },
+                {
+                    "question":  "What are the main hotkeys?",
+                    "answer":  "F8 toggles Diagnostics, Alt+F8 switches P1/P2, F9 changes module, F10 pins or unpins the target, F11 runs module-specific targeted tracing, F12 writes a report or incident snapshot, Shift+F12 runs diff/status actions, and Ctrl+F12 enables deeper safe-field inspection for OBJECT/PHYSICS."
+                },
+                {
+                    "question":  "Where are reports written?",
+                    "answer":  "With the default portable configuration, reports are written under BepInEx/config/StrandedDeepDiagnostics/Reports."
+                },
+                {
+                    "question":  "Are the BamEx adapters required?",
+                    "answer":  "No. The core diagnostics work without them. The BamEx adapters are optional extensions for project-specific Boombox and Raft Furniture inspection."
+                },
+                {
+                    "question":  "Why is this version marked as a pre-release?",
+                    "answer":  "v1.0.0-rc1 is the first public release candidate. It is distributed through the common Stranded Deep mod catalog and Mod Manager while remaining explicitly marked as a pre-release."
+                }
+            ],
+    "changelog":  [
+
+                  ]
+}
