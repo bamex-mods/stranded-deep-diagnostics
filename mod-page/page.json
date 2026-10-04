@@ -10,7 +10,8 @@
                   "icon":  "media/icon.png",
                   "screenshots":  [
 
-                                  ]
+                                  ],
+                  "cover":  "media/cover.jpg"
               },
     "tags":  [
                  "diagnostics",
